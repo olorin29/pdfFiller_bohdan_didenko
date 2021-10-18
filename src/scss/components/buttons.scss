@@ -1,0 +1,70 @@
+.primary-button,
+.simple-button {
+  min-width: 120px;
+  max-height: 32px;
+  padding: 8px 12px;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.333;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+}
+
+.primary-button {
+  color: #fff;
+  border: 1px solid #E88300;
+  background: linear-gradient(180deg, #FFAE45 0%, #E88300 100%);
+
+  &:active {
+    background: linear-gradient(180deg, #E88300 0%, #FFAE45 100%);
+  }
+
+  &:focus {
+    background: #FFA42E;
+    border-color: #E88300;
+    box-shadow: 0 0 4px #E88300;
+  }
+
+  &:disabled {
+    background: #FFD8A5;
+    border-color: #FFD8A5;
+    pointer-events: none;
+  }
+}
+
+.simple-button {
+  color: #414141;
+  background: linear-gradient(180deg, #F5F5F5 0%, #E9E9E9 100%);
+  border: 1px solid #BFBFBF;
+
+  &:active {
+    background: linear-gradient(180deg, #E9E9E9 0%, #F5F5F5 100%);
+  }
+
+  &:focus {
+    background: linear-gradient(180deg, #F5F5F5 0%, #E9E9E9 100%);
+    box-shadow: 0 0 4px #BFBFBF;
+  }
+
+  &:disabled {
+    background: #F9F9F9;
+    pointer-events: none;
+  }
+}
+
+@media (hover: hover), (min-width:0\0), (min--moz-device-pixel-ratio:0) {
+  .primary-button {
+    &:hover {
+      background: #FFA42E;
+      border-color: #E88300;
+    }
+  }
+
+  .simple-button {
+    &:hover {
+      background: #F5F5F5;
+    }
+  }
+}

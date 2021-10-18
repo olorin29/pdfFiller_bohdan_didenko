@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  min-height: 1px;
+}
+
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+  &:after {
+    content:'';
+    min-height:inherit;
+    font-size:0;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 656px;
+  padding: 0 20px;
+}
+
+// ------ components ------
+
+@import "scss/components/buttons";
+@import "scss/components/documentList";
